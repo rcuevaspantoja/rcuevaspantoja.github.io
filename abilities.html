@@ -28,6 +28,8 @@
 
     #pasive{
         background-color: beige;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     #list-passive{
@@ -48,6 +50,16 @@
         border-radius: 6px;
         text-align: left;
     }    
+
+    ul {
+        -moz-column-count: 4;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 4;
+        -webkit-column-gap: 20px;
+        column-count: 4;
+        column-gap: 20px;
+    }
+
 </style>
 
 
@@ -64,127 +76,87 @@
 
 <!--BARRA DE NAVEGACIÓN-->    
 <div id="nav_bar">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+  
+            <li class="nav-item active">
+              <a style="font-size: 25px;" class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+  
+            <li class="nav-item">
+              <a style="font-size: 25px;" class="nav-link" href="builds.html">Builds</a>
+            </li>
+  
+            <li class="nav-item">
+              <a style="font-size: 25px;" class="nav-link" href="abilities.html">Abilities</a>
+            </li>         
+  
+            <li class="nav-item">
+              <a style="font-size: 25px;" class="nav-link" href="guides.html">Guides</a>
+            </li>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item active">
-            <a style="font-size: 25px;" class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-          </li>
-
-          <li class="nav-item">
-            <a style="font-size: 25px;" class="nav-link" href="#">Builds</a>
-          </li>
-
-          <li class="nav-item">
-            <a style="font-size: 25px;" class="nav-link" href="habilities.html">Habilities</a>
-          </li>         
-
-          <li class="nav-item">
-              <a style="font-size: 25px;" class="nav-link" href="streamers.html">Streamers</a>
-          </li>
-
-          <li class="nav-item">
-              <a style="font-size: 25px;" class="nav-link" href="streamers.html">SoloQ tips</a>
-          </li>    
-          
-          <li class="nav-item">
-              <a style="font-size: 25px;" class="nav-link" href="streamers.html">Tips & Trics</a>
-          </li>
-    
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search Matchup" aria-label="Search">
-          <button class="btn btn-danger" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>  
-</div>    
-<!--BARRA DE NAVEGACIÓN-->
+            <li class="nav-item">
+                <a style="font-size: 25px;" class="nav-link" href="streamers.html">Streamers</a>
+            </li>
+  
+            <li class="nav-item">
+                <a style="font-size: 25px;" class="nav-link disabled" href="streamers.html">SoloQ tips</a>
+            </li>    
+            
+            <li class="nav-item">
+                <a style="font-size: 25px;" class="nav-link disabled" href="streamers.html">Tips & Trics</a>
+            </li>
+      
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Matchup" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>  
+  </div>    
+  <!--BARRA DE NAVEGACIÓN-->
     
     <div class="col-xl-12 col-lg-9 text-center" style="margin-top: 1%;">
         <h4 style=font-size:90px>Abilities</h4>
     </div> 
 
-    <div id="pasive" class="row justify-content-center"style="margin-top: 2%; ">
-                      
+    <div id="pasive" class="row justify-content-center  "style="margin-top: 2%; ">                     
         <div class="col-xl-6  "style="margin-top: 2px;">
             <h2 style="margin-top:10px; margin-left: 15px;">Passive</h2>
-            <img src="image/habilities/passive.png"  style="width: 20%; margin:15px;">    
+            <img src="image/habilities/passive.png"  style="width: 20%; margin:15px;" class="center">    
             <h3 style="font-size: 25px;">
                 If Teemo stands still and takes no actions for a short duration, he becomes Invisible indefinitely. If he's in brush, Teemo can enter and maintain his Invisibility while moving. After leaving Invisibility, Teemo gains the Element of Surprise, increasing his Attack Speed for 3 seconds.
             </h3>
         </div>      
 
         <div class="col-xl-6  "style="margin-top: 10px;">
-            <h5>                     
+            <h5 style="font-size: 25px;">                     
                 Champions that can get you out from passive.
             </h5>
 
             <p>You can also use spells like teleport or flash withouth losing the invisibility.</p>
 
-            <div class="row">
+            <div>
                 <ul>
                     <div id="list-passive" class="row col-xl-6 " >
                         <div class="create-route">
-                            <li>Ahri</li>
-                            <li>Alistar</li>
-                            <li>Azir</li>
-                            <li>Aurelion Sol</li>
-                            <li>Blitzcrank</li>
-                            <li>Braum</li>
-                            <li>Cho' Gath</li>
-                            <li>Darius</li>
-                            <li>Diana</li>
-                            <li>Draven</li>
-                            <li>Evelynn</li>
-                            <li>Fidlesticks</li>
-                        </div>                       
-                        <div class="create-route">
-                            <li>Fizz</li>
-                            <li>Galio</li>                            
-                            <li>Gragas</li>
-                            <li>Illaoi</li>
-                            <li>Janna</li>
-                            <li>Kai'Sa</li>
-                            <li>Katarina</li>
-                            <li>Nidalee</li>
-                            <li>Morgana</li>
-                            <li>Rengar</li>                          
-                            <li>Shen</li>
-                            <li>Trundle</li>                    
-                        </div>                          
-                        <div class="create-route">
-                            <li>Orianna</li>
-                            <li>Vi</li>                                
-                            <li>Warwick</li>
-                            <li>Zyra</li>                              
-                            <li>Yasuo</li>
-                            <li>Lee Sin</li>
-                            <li>Ziggs</li>
-                            <li>Zac</li>
-                            <li>Sylas</li>
-                            <li>Xin Zhao</li>
-                            <li>Vel Koz</li>
-                            <li>Poppy</li>                       
-                        </div>         
-                        <div class="create-route">
-                            <li>Urgot</li>
-                            <li>Twisted Fate</li>
-                            <li>Thresh</li>
-                            <li>Syndra</li>                            
-                            <li>Swain</li>
-                            <li>Sion</li>                               
-                            <li>Sejuani</li>
-                            <li>Rammus</li>                                
+                            <li>Ahri</li><li>Alistar</li><li>Azir</li><li>Aurelion Sol</li><li>Blitzcrank</li><li>Braum</li><li>Cho' Gath</li>
+                            <li>Darius</li><li>Diana</li><li>Draven</li><li>Evelynn</li><li>Fidlesticks</li>
+                            <li>Fizz</li><li>Galio</li><li>Gragas</li><li>Illaoi</li><li>Janna</li><li>Kai'Sa</li><li>Katarina</li>
+                            <li>Nidalee</li><li>Morgana</li><li>Rengar</li><li>Shen</li><li>Trundle</li>                    
+                            <li>Orianna</li><li>Vi</li><li>Warwick</li><li>Zyra</li><li>Yasuo</li><li>Lee Sin</li><li>Ziggs</li>
+                            <li>Zac</li><li>Sylas</li><li>Xin Zhao</li><li>Vel Koz</li><li>Poppy</li>                       
+                            <li>Urgot</li><li>Twisted Fate</li><li>Thresh</li><li>Syndra</li><li>Swain</li><li>Sion</li><li>Sejuani</li><li>Rammus</li>                                
                         </div>             
                     </div>
-                  </ul>  
+                </ul>  
             </div>    
         </div>                         
     </div>  
@@ -199,10 +171,18 @@
         </div>      
 
         <div class="col-xl-6  "style="margin-top: 10px;">
-            <h5>                     
-                Champions that can get you out from passive.
+            <h5 style="font-size: 25px;">                     
+                You have to choose the right moment to blind the enemy and deny his damage.
             </h5>
-            <p>Teemo passive is completly fucked up btw.</p>
+                <p>You can Q after enter a bush to use the blind to activate your passive.</p>
+            <ul>
+                <div id="list-passive" class="row col-xl-6 " >
+                    <div class="create-route">
+                        <li>Renekton's W</li><li>Camille's 2nd Q</li><li>Jhin's 5th AA</li><li>Braum passive</li>
+                        <li>Blitzcrank's E</li>                            
+                    </div>             
+                </div>
+            </ul>  
         </div>                                 
     </div>  
 
@@ -216,10 +196,10 @@
         </div>      
 
         <div class="col-xl-6  "style="margin-top: 10px;">
-            <h5>                     
-                Champions that can get you out from passive.
+            <h5 style="font-size: 25px;">                     
+                Title
             </h5>
-            <p>Teemo passive is completly fucked up btw.</p>
+            <p>Text</p>
         </div>                                 
     </div>
 
@@ -233,10 +213,10 @@
         </div>      
 
         <div class="col-xl-6  "style="margin-top: 10px;">
-            <h5>                     
-                Champions that can get you out from passive.
+            <h5 style="font-size: 25px;">                     
+                Title
             </h5>
-            <p>Teemo passive is completly fucked up btw.</p>
+            <p>Text</p>
         </div>                                 
     </div>  
     
@@ -250,11 +230,11 @@
         </div>      
 
         <div class="col-xl-6  "style="margin-top: 10px;">
-            <h5>                     
-                Champions that can get you out from passive.
+            <h5 style="font-size: 25px;">                     
+                Title
             </h5>
 
-            <p>Teemo passive is completly fucked up btw.</p>
+            <p>Text</p>
         </div>                                 
     </div>    
 
